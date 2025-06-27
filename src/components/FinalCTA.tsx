@@ -27,7 +27,7 @@ export const FinalCTA = () => {
 
           <h2 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
             Your next viral video is{" "}
-            <span className="text-white">
+            <span className="bg-gradient-to-r from-pink-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent font-extrabold">
               1 click
             </span>{" "}
             away.
