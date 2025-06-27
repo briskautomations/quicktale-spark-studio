@@ -1,3 +1,4 @@
+import { Play } from "lucide-react";
 
 export const FloatingMarquee = () => {
   const videoId = "w1EhwfASwUA";
@@ -11,13 +12,13 @@ export const FloatingMarquee = () => {
   }));
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-accent/5 overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-slate-100 to-blue-100 overflow-hidden">
       <div className="container mx-auto px-6 mb-12">
         <div className="text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-dark mb-4">
+          <h2 className="text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
             See QuikTale in Action
           </h2>
-          <p className="text-xl text-medium">
+          <p className="text-xl text-medium max-w-3xl mx-auto leading-relaxed">
             Real creators, real results — watch the magic happen
           </p>
         </div>
@@ -29,14 +30,14 @@ export const FloatingMarquee = () => {
           {videos.concat(videos).map((video, index) => (
             <div
               key={`video-${index}`}
-              className="flex-shrink-0 w-48 h-85 bg-white rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 animate-float border border-white/20"
+              className="flex-shrink-0 w-48 h-85 bg-white rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 animate-float border border-slate-200"
               style={{ 
                 animationDelay: `${video.delay}s`,
-                background: 'linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7))',
+                background: 'linear-gradient(145deg, rgba(255,255,255,0.95), rgba(248,250,252,0.9))',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="w-full h-full rounded-2xl overflow-hidden relative bg-black">
+              <div className="w-full h-full rounded-2xl overflow-hidden relative bg-slate-900">
                 <iframe
                   src={video.embedUrl}
                   className="w-full h-full object-cover"
@@ -57,10 +58,10 @@ export const FloatingMarquee = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-12 h-12 bg-primary/20 rounded-2xl animate-glow blur-sm"></div>
-      <div className="absolute bottom-20 right-10 w-8 h-8 bg-accent/30 rounded-full animate-pulse"></div>
-      <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full animate-bounce opacity-60"></div>
+      {/* Darker Floating Elements */}
+      <div className="absolute top-20 left-10 w-12 h-12 bg-slate-400/30 rounded-2xl animate-glow blur-sm"></div>
+      <div className="absolute bottom-20 right-10 w-8 h-8 bg-slate-500/40 rounded-full animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-gradient-to-r from-slate-400 to-slate-600 rounded-full animate-bounce opacity-60"></div>
     </section>
   );
 };
