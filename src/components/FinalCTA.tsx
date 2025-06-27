@@ -21,7 +21,7 @@ export const FinalCTA = () => {
             
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-8">
               <Sparkles className="w-4 h-4 mr-2" />
-              No signup required • Export in seconds
+              <span className="text-white">No signup required • Export in seconds</span>
             </div>
           </div>
 
@@ -43,24 +43,24 @@ export const FinalCTA = () => {
               className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-12 h-16 rounded-2xl text-lg shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 animate-pulse-glow"
             >
               <Zap className="w-6 h-6 mr-3" />
-              Start Creating Now
+              <span className="text-white">Start Creating Now</span>
               <ArrowRight className="w-6 h-6 ml-3" />
             </Button>
 
             <div className="flex items-center space-x-6 text-sm text-blue-200">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>Free to start</span>
+                <span className="text-blue-200">Free to start</span>
               </div>
               <div className="w-1 h-4 bg-blue-400/30"></div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>No watermarks</span>
+                <span className="text-blue-200">No watermarks</span>
               </div>
               <div className="w-1 h-4 bg-blue-400/30"></div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>Unlimited exports</span>
+                <span className="text-blue-200">Unlimited exports</span>
               </div>
             </div>
           </div>
