@@ -14,7 +14,7 @@ export const HeroSection = () => {
                 2.5M+ AI-generated videos
               </div>
               
-              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.05] tracking-tight">
+              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-dark leading-[1.05] tracking-tight">
                 Create AI-powered{" "}
                 <span className="bg-gradient-to-r from-primary via-purple-500 to-accent bg-clip-text text-transparent">
                   viral videos
@@ -22,7 +22,7 @@ export const HeroSection = () => {
                 — faster than ever.
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-medium">
+              <p className="text-xl lg:text-2xl text-medium leading-relaxed max-w-3xl mx-auto font-medium">
                 Upload a script or clip, and get a fully-edited short with voiceover, captions, and viral pacing. Ready for Reels, Shorts, TikTok.
               </p>
             </div>
@@ -39,14 +39,14 @@ export const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-foreground/20 bg-background/80 backdrop-blur-sm text-foreground hover:bg-foreground hover:text-background font-bold px-10 h-14 rounded-2xl text-lg transition-all duration-300 hover:scale-105"
+                className="border-2 border-gray-300 bg-background/80 backdrop-blur-sm text-dark hover:bg-gray-100 hover:text-dark font-bold px-10 h-14 rounded-2xl text-lg transition-all duration-300 hover:scale-105"
               >
                 <Play className="w-5 h-5 mr-3" />
                 Watch 30-sec Demo
               </Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-muted-foreground font-medium">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-light font-medium">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span>No signup needed</span>

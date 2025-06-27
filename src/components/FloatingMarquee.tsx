@@ -14,21 +14,21 @@ export const FloatingMarquee = () => {
     <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-accent/5 overflow-hidden">
       <div className="container mx-auto px-6 mb-12">
         <div className="text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-dark mb-4">
             See QuikTale in Action
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-medium">
             Real creators, real results — watch the magic happen
           </p>
         </div>
       </div>
 
-      {/* Floating Videos Row 1 */}
-      <div className="relative mb-8">
+      {/* Single Floating Videos Row */}
+      <div className="relative">
         <div className="flex animate-scroll space-x-6 w-max">
           {videos.concat(videos).map((video, index) => (
             <div
-              key={`row1-${index}`}
+              key={`video-${index}`}
               className="flex-shrink-0 w-48 h-85 bg-white rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 animate-float border border-white/20"
               style={{ 
                 animationDelay: `${video.delay}s`,
@@ -49,43 +49,7 @@ export const FloatingMarquee = () => {
                   <div className="h-1 bg-white/30 rounded-full mb-2">
                     <div className="h-full w-3/4 bg-white rounded-full"></div>
                   </div>
-                  <div className="text-xs font-semibold">AI Generated Short</div>
                   <div className="text-xs opacity-80">2.3M views</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Floating Videos Row 2 - Reverse Direction */}
-      <div className="relative">
-        <div className="flex animate-scroll-reverse space-x-6 w-max">
-          {videos.concat(videos).map((video, index) => (
-            <div
-              key={`row2-${index}`}
-              className="flex-shrink-0 w-48 h-85 bg-white rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 animate-float border border-white/20"
-              style={{ 
-                animationDelay: `${video.delay + 2}s`,
-                background: 'linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7))',
-                backdropFilter: 'blur(20px)'
-              }}
-            >
-              <div className="w-full h-full rounded-2xl overflow-hidden relative bg-black">
-                <iframe
-                  src={video.embedUrl}
-                  className="w-full h-full object-cover"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  style={{ aspectRatio: '9/16' }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <div className="h-1 bg-white/30 rounded-full mb-2">
-                    <div className="h-full w-2/3 bg-white rounded-full"></div>
-                  </div>
-                  <div className="text-xs font-semibold">Viral Content</div>
-                  <div className="text-xs opacity-80">1.8M views</div>
                 </div>
               </div>
             </div>

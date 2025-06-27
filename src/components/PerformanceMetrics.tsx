@@ -37,10 +37,10 @@ export const PerformanceMetrics = () => {
     <section className="py-20 gradient-mesh">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-dark mb-6">
             Real results from real creators
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-medium max-w-2xl mx-auto">
             See the performance boost creators are experiencing with QuikTale's AI technology
           </p>
         </div>
@@ -55,15 +55,15 @@ export const PerformanceMetrics = () => {
                 {metric.icon}
               </div>
               
-              <div className="text-4xl font-bold text-foreground mb-2 group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+              <div className="text-4xl font-bold text-dark mb-2 group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                 {metric.value}
               </div>
               
-              <div className="text-lg font-semibold text-foreground mb-2">
+              <div className="text-lg font-semibold text-dark mb-2">
                 {metric.label}
               </div>
               
-              <div className="text-sm text-muted-foreground">
+              <div className="text-sm text-medium">
                 {metric.description}
               </div>
             </div>
@@ -83,8 +83,8 @@ export const PerformanceMetrics = () => {
                 </div>
               ))}
             </div>
-            <div className="text-sm text-muted-foreground">
-              Join <span className="font-semibold text-foreground">12,300+</span> creators seeing these results
+            <div className="text-sm text-medium">
+              Join <span className="font-semibold text-dark">12,300+</span> creators seeing these results
             </div>
           </div>
         </div>
