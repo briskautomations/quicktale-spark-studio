@@ -3,19 +3,19 @@ import { Play, Zap, Sparkles, ArrowRight, Video } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen pt-24 flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-indigo-50">
+    <section className="min-h-screen pt-24 flex items-center justify-center bg-gradient-to-br from-white via-slate-50 to-blue-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-5xl mx-auto">
           <div className="space-y-8">
             <div className="space-y-8">
-              <div className="inline-flex items-center px-6 py-3 rounded-full border-2 border-primary/30 bg-gradient-to-r from-primary/10 to-accent/10 text-primary-contrast text-sm font-bold shadow-lg">
+              <div className="inline-flex items-center px-6 py-3 rounded-full border-2 border-indigo-500/30 bg-gradient-to-r from-indigo-500/10 to-blue-500/10 text-indigo-700 text-sm font-bold shadow-lg">
                 <Sparkles className="w-5 h-5 mr-2" />
                 2.5M+ AI-generated videos
               </div>
               
               <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-slate-900 leading-[1.05] tracking-tight">
                 Create AI-powered{" "}
-                <span className="bg-gradient-to-r from-primary via-purple-600 to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-700 to-blue-600 bg-clip-text text-transparent font-extrabold">
                   viral videos
                 </span>{" "}
                 — faster than ever.
@@ -29,7 +29,7 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 size="lg" 
-                className="btn-primary text-white font-bold px-12 h-16 rounded-2xl text-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300 group"
+                className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-bold px-12 h-16 rounded-2xl text-lg shadow-2xl hover:shadow-indigo-500/50 transition-all duration-300 group"
               >
                 <Zap className="w-6 h-6 mr-3 group-hover:animate-pulse" />
                 Start Creating
@@ -39,7 +39,7 @@ export const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="btn-secondary font-bold px-12 h-16 rounded-2xl text-lg transition-all duration-300 hover:scale-105 group"
+                className="border-2 border-indigo-600 bg-white/90 text-indigo-700 hover:bg-indigo-600 hover:text-white font-bold px-12 h-16 rounded-2xl text-lg transition-all duration-300 hover:scale-105 group"
               >
                 <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
                 Watch 30-sec Demo
