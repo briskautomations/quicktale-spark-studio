@@ -1,7 +1,7 @@
 
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { MarqueeReels } from "@/components/MarqueeReels";
+import { FloatingMarquee } from "@/components/FloatingMarquee";
 import { AIWorkflowSection } from "@/components/AIWorkflowSection";
 import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { TestimonialStrip } from "@/components/TestimonialStrip";
@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <HeroSection />
-      <MarqueeReels />
+      <FloatingMarquee />
       <AIWorkflowSection />
       <PerformanceMetrics />
       <TestimonialStrip />

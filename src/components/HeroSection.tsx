@@ -4,130 +4,58 @@ import { Play, Zap, Sparkles } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen pt-16 gradient-mesh flex items-center">
+    <section className="min-h-screen pt-16 flex items-center justify-center bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Content */}
+        <div className="text-center max-w-4xl mx-auto">
           <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium">
-                <Sparkles className="w-3 h-3 mr-1" />
+            <div className="space-y-6">
+              <div className="inline-flex items-center px-4 py-2 rounded-full border-2 border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
+                <Sparkles className="w-4 h-4 mr-2" />
                 2.5M+ AI-generated videos
               </div>
               
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
+              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.05] tracking-tight">
                 Create AI-powered{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-purple-500 to-accent bg-clip-text text-transparent">
                   viral videos
                 </span>{" "}
                 — faster than ever.
               </h1>
               
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-medium">
                 Upload a script or clip, and get a fully-edited short with voiceover, captions, and viral pacing. Ready for Reels, Shorts, TikTok.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 size="lg" 
-                className="btn-primary text-white font-semibold px-8 h-12 rounded-xl text-base"
+                className="btn-primary text-white font-bold px-10 h-14 rounded-2xl text-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300"
               >
-                <Zap className="w-4 h-4 mr-2" />
+                <Zap className="w-5 h-5 mr-3" />
                 Start Creating
               </Button>
               
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-foreground/10 text-foreground hover:bg-foreground hover:text-background font-semibold px-8 h-12 rounded-xl text-base transition-all duration-300"
+                className="border-2 border-foreground/20 bg-background/80 backdrop-blur-sm text-foreground hover:bg-foreground hover:text-background font-bold px-10 h-14 rounded-2xl text-lg transition-all duration-300 hover:scale-105"
               >
-                <Play className="w-4 h-4 mr-2" />
+                <Play className="w-5 h-5 mr-3" />
                 Watch 30-sec Demo
               </Button>
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-muted-foreground font-medium">
+              <div className="flex items-center space-x-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span>No signup needed</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+              <div className="flex items-center space-x-3">
+                <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
                 <span>Export in seconds</span>
               </div>
             </div>
-          </div>
-          
-          {/* Right Column - 3D Video Preview */}
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-              {/* Floating video cards */}
-              <div className="space-y-4">
-                <div className="bg-white rounded-2xl p-1 shadow-2xl animate-float" style={{ animationDelay: '0s' }}>
-                  <div className="aspect-[9/16] bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="h-1 bg-white/30 rounded-full mb-2">
-                        <div className="h-full w-3/4 bg-white rounded-full"></div>
-                      </div>
-                      <div className="text-white text-xs font-medium">Cooking Hack</div>
-                      <div className="text-white/70 text-xs">2.3M views</div>
-                    </div>
-                    <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white" />
-                  </div>
-                </div>
-                
-                <div className="bg-white rounded-2xl p-1 shadow-2xl animate-float" style={{ animationDelay: '2s' }}>
-                  <div className="aspect-[9/16] bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="h-1 bg-white/30 rounded-full mb-2">
-                        <div className="h-full w-2/3 bg-white rounded-full"></div>
-                      </div>
-                      <div className="text-white text-xs font-medium">Tech Review</div>
-                      <div className="text-white/70 text-xs">890K views</div>
-                    </div>
-                    <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white" />
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-4 pt-8">
-                <div className="bg-white rounded-2xl p-1 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
-                  <div className="aspect-[9/16] bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="h-1 bg-white/30 rounded-full mb-2">
-                        <div className="h-full w-4/5 bg-white rounded-full"></div>
-                      </div>
-                      <div className="text-white text-xs font-medium">Life Hack</div>
-                      <div className="text-white/70 text-xs">3.4M views</div>
-                    </div>
-                    <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white" />
-                  </div>
-                </div>
-                
-                <div className="bg-white rounded-2xl p-1 shadow-2xl animate-float" style={{ animationDelay: '3s' }}>
-                  <div className="aspect-[9/16] bg-gradient-to-br from-orange-500 to-red-500 rounded-xl relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="h-1 bg-white/30 rounded-full mb-2">
-                        <div className="h-full w-1/2 bg-white rounded-full"></div>
-                      </div>
-                      <div className="text-white text-xs font-medium">Dance Trend</div>
-                      <div className="text-white/70 text-xs">5.1M views</div>
-                    </div>
-                    <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Floating AI elements */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-lg animate-glow opacity-60"></div>
-            <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-accent rounded-full animate-pulse"></div>
-            <div className="absolute top-1/2 -right-8 w-4 h-4 bg-gradient-to-r from-primary to-accent rounded-full animate-bounce"></div>
           </div>
         </div>
       </div>

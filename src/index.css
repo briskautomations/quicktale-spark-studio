@@ -100,6 +100,11 @@
   100% { transform: translateX(-50%); }
 }
 
+@keyframes scroll-horizontal-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -113,7 +118,11 @@
 }
 
 .animate-scroll {
-  animation: scroll-horizontal 30s linear infinite;
+  animation: scroll-horizontal 40s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-horizontal-reverse 35s linear infinite;
 }
 
 /* Glassmorphism effects */
@@ -138,8 +147,8 @@
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 25px rgba(91, 95, 238, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(91, 95, 238, 0.4);
 }
 
 .shimmer-effect {
@@ -156,4 +165,9 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   animation: shimmer 2s infinite;
+}
+
+/* Custom height for 9:16 videos */
+.h-85 {
+  height: 21rem; /* Approximately 9:16 ratio for width of 12rem (w-48) */
 }
