@@ -27,13 +27,13 @@ export const FinalCTA = () => {
 
           <h2 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
             Your next viral video is{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+            <span className="text-white">
               1 click
             </span>{" "}
             away.
           </h2>
 
-          <p className="text-xl lg:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
             Join <span className="font-bold text-white text-2xl">12,300+</span> creators who've transformed their content strategy with AI-powered video generation.
           </p>
 
@@ -47,20 +47,20 @@ export const FinalCTA = () => {
               <ArrowRight className="w-6 h-6 ml-3" />
             </Button>
 
-            <div className="flex items-center space-x-6 text-sm text-blue-200">
+            <div className="flex items-center space-x-6 text-sm text-white/80">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>Free to start</span>
+                <span className="text-white">Free to start</span>
               </div>
-              <div className="w-1 h-4 bg-blue-400/30"></div>
+              <div className="w-1 h-4 bg-white/30"></div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>No watermarks</span>
+                <span className="text-white">No watermarks</span>
               </div>
-              <div className="w-1 h-4 bg-blue-400/30"></div>
+              <div className="w-1 h-4 bg-white/30"></div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>Unlimited exports</span>
+                <span className="text-white">Unlimited exports</span>
               </div>
             </div>
           </div>
@@ -72,21 +72,21 @@ export const FinalCTA = () => {
                 <Star className="w-6 h-6 text-yellow-400 mr-2" />
                 <div className="text-3xl font-bold text-white">2.5M+</div>
               </div>
-              <div className="text-sm text-blue-200">Videos Created</div>
+              <div className="text-sm text-white/80">Videos Created</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center mb-3">
                 <TrendingUp className="w-6 h-6 text-green-400 mr-2" />
                 <div className="text-3xl font-bold text-white">89%</div>
               </div>
-              <div className="text-sm text-blue-200">Viral Success Rate</div>
+              <div className="text-sm text-white/80">Viral Success Rate</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center mb-3">
                 <Zap className="w-6 h-6 text-blue-400 mr-2" />
                 <div className="text-3xl font-bold text-white">3.5x</div>
               </div>
-              <div className="text-sm text-blue-200">Faster Creation</div>
+              <div className="text-sm text-white/80">Faster Creation</div>
             </div>
           </div>
         </div>
