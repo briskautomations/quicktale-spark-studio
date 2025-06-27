@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Zap, ArrowRight, Sparkles, CheckCircle, Star } from "lucide-react";
+import { Zap, ArrowRight, Sparkles, CheckCircle, Star, TrendingUp } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
@@ -67,21 +67,21 @@ export const FinalCTA = () => {
 
           {/* Enhanced Trust indicators */}
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="card-enhanced bg-white/10 backdrop-blur-sm border-white/20 p-6 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center mb-3">
                 <Star className="w-6 h-6 text-yellow-400 mr-2" />
                 <div className="text-3xl font-bold text-white">2.5M+</div>
               </div>
               <div className="text-sm text-blue-200">Videos Created</div>
             </div>
-            <div className="card-enhanced bg-white/10 backdrop-blur-sm border-white/20 p-6 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center mb-3">
                 <TrendingUp className="w-6 h-6 text-green-400 mr-2" />
                 <div className="text-3xl font-bold text-white">89%</div>
               </div>
               <div className="text-sm text-blue-200">Viral Success Rate</div>
             </div>
-            <div className="card-enhanced bg-white/10 backdrop-blur-sm border-white/20 p-6 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center mb-3">
                 <Zap className="w-6 h-6 text-blue-400 mr-2" />
                 <div className="text-3xl font-bold text-white">3.5x</div>

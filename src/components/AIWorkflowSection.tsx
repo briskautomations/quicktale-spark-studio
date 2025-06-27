@@ -1,4 +1,3 @@
-
 import { Zap, MessageSquare, Palette, TrendingUp } from "lucide-react";
 
 export const AIWorkflowSection = () => {
@@ -27,20 +26,20 @@ export const AIWorkflowSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-card">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium mb-6">
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary-contrast text-sm font-medium mb-6">
             <Zap className="w-3 h-3 mr-1" />
             AI-Powered Workflow
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-5xl lg:text-6xl font-bold text-dark mb-8 leading-tight">
             From idea to viral video in{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               3 simple steps
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-medium max-w-3xl mx-auto leading-relaxed">
             Our AI handles the complex editing, timing, and optimization so you can focus on creating content.
           </p>
         </div>
@@ -53,10 +52,10 @@ export const AIWorkflowSection = () => {
             >
               {/* Connection line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 -right-4 w-8 h-0.5 bg-gradient-to-r from-border to-transparent z-10"></div>
+                <div className="hidden lg:block absolute top-12 -right-4 w-8 h-0.5 bg-gradient-to-r from-slate-200 to-transparent z-10"></div>
               )}
               
-              <div className="bg-background border border-border rounded-2xl p-8 h-full hover:shadow-lg transition-all duration-300 group-hover:border-primary/30">
+              <div className="card-enhanced p-8 h-full hover:shadow-xl transition-all duration-300 group-hover:border-primary/30">
                 <div className="flex items-start space-x-4 mb-6">
                   <div className="flex-shrink-0">
                     <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white shadow-lg`}>
@@ -64,16 +63,16 @@ export const AIWorkflowSection = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm font-mono text-muted-foreground mb-2">{step.number}</div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
+                    <div className="text-sm font-mono text-medium mb-2">{step.number}</div>
+                    <h3 className="text-xl font-bold text-dark mb-3">{step.title}</h3>
                   </div>
                 </div>
                 
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                <p className="text-medium leading-relaxed">{step.description}</p>
                 
                 {/* Animated progress indicator */}
                 <div className="mt-6">
-                  <div className="h-1 bg-border rounded-full overflow-hidden">
+                  <div className="h-1 bg-slate-200 rounded-full overflow-hidden">
                     <div 
                       className={`h-full bg-gradient-to-r ${step.color} rounded-full group-hover:animate-shimmer transition-all duration-500`}
                       style={{ 
@@ -89,9 +88,9 @@ export const AIWorkflowSection = () => {
         </div>
 
         {/* Demo CTA */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center px-6 py-3 rounded-xl border border-border text-foreground hover:bg-foreground hover:text-background transition-all duration-300 font-medium">
-            <Zap className="w-4 h-4 mr-2" />
+        <div className="text-center mt-16">
+          <button className="inline-flex items-center px-8 py-4 rounded-xl border-2 border-primary text-primary-contrast hover:bg-primary hover:text-white transition-all duration-300 font-semibold text-lg">
+            <Zap className="w-5 h-5 mr-2" />
             See AI Workflow in Action
           </button>
         </div>
