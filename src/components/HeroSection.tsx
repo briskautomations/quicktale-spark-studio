@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Play, Zap, Sparkles, ArrowRight } from "lucide-react";
+import { Play, Zap, Sparkles, ArrowRight, Video } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -13,7 +13,7 @@ export const HeroSection = () => {
                 2.5M+ AI-generated videos
               </div>
               
-              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-dark leading-[1.05] tracking-tight">
+              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-slate-900 leading-[1.05] tracking-tight">
                 Create AI-powered{" "}
                 <span className="bg-gradient-to-r from-primary via-purple-600 to-accent bg-clip-text text-transparent">
                   viral videos
@@ -21,7 +21,7 @@ export const HeroSection = () => {
                 — faster than ever.
               </h1>
               
-              <p className="text-xl lg:text-2xl text-medium leading-relaxed max-w-4xl mx-auto font-medium">
+              <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed max-w-4xl mx-auto font-medium">
                 Upload a script or clip, and get a fully-edited short with voiceover, captions, and viral pacing. Ready for Reels, Shorts, TikTok.
               </p>
             </div>
@@ -46,7 +46,7 @@ export const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-12 text-sm text-medium font-semibold">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-12 text-sm text-slate-700 font-semibold">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span>No signup needed</span>
