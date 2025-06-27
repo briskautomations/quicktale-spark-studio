@@ -1,28 +1,27 @@
-
 import { Button } from "@/components/ui/button";
-import { Play, Zap, Sparkles } from "lucide-react";
+import { Play, Zap, Sparkles, ArrowRight } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen pt-16 flex items-center justify-center bg-background">
+    <section className="min-h-screen pt-24 flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-indigo-50">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-5xl mx-auto">
           <div className="space-y-8">
-            <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 rounded-full border-2 border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
-                <Sparkles className="w-4 h-4 mr-2" />
+            <div className="space-y-8">
+              <div className="inline-flex items-center px-6 py-3 rounded-full border-2 border-primary/30 bg-gradient-to-r from-primary/10 to-accent/10 text-primary-contrast text-sm font-bold shadow-lg">
+                <Sparkles className="w-5 h-5 mr-2" />
                 2.5M+ AI-generated videos
               </div>
               
               <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-dark leading-[1.05] tracking-tight">
                 Create AI-powered{" "}
-                <span className="bg-gradient-to-r from-primary via-purple-500 to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-purple-600 to-accent bg-clip-text text-transparent">
                   viral videos
                 </span>{" "}
                 — faster than ever.
               </h1>
               
-              <p className="text-xl lg:text-2xl text-medium leading-relaxed max-w-3xl mx-auto font-medium">
+              <p className="text-xl lg:text-2xl text-medium leading-relaxed max-w-4xl mx-auto font-medium">
                 Upload a script or clip, and get a fully-edited short with voiceover, captions, and viral pacing. Ready for Reels, Shorts, TikTok.
               </p>
             </div>
@@ -30,23 +29,24 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 size="lg" 
-                className="btn-primary text-white font-bold px-10 h-14 rounded-2xl text-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300"
+                className="btn-primary text-white font-bold px-12 h-16 rounded-2xl text-lg shadow-2xl hover:shadow-primary/50 transition-all duration-300 group"
               >
-                <Zap className="w-5 h-5 mr-3" />
+                <Zap className="w-6 h-6 mr-3 group-hover:animate-pulse" />
                 Start Creating
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-gray-300 bg-background/80 backdrop-blur-sm text-dark hover:bg-gray-100 hover:text-dark font-bold px-10 h-14 rounded-2xl text-lg transition-all duration-300 hover:scale-105"
+                className="btn-secondary font-bold px-12 h-16 rounded-2xl text-lg transition-all duration-300 hover:scale-105 group"
               >
-                <Play className="w-5 h-5 mr-3" />
+                <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
                 Watch 30-sec Demo
               </Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-light font-medium">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-12 text-sm text-medium font-semibold">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span>No signup needed</span>
@@ -54,6 +54,10 @@ export const HeroSection = () => {
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
                 <span>Export in seconds</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+                <span>No watermarks</span>
               </div>
             </div>
           </div>
